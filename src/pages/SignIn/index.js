@@ -1,4 +1,6 @@
-import { Grid, TextField, Typography, Button, Link } from '@mui/material';
+import { Grid, TextField, Typography, Button } from '@mui/material';
+import { Link } from "react-router-dom";
+import undoButton from '../../assets/undo-small.svg';
 
 function SignIn() {
   return (
@@ -20,7 +22,12 @@ function SignIn() {
           justifyContent="space-between"
           style={{ padding: 10 }}
         >
-          <div />
+          <Link to="/" style={{ width: 100, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5, textDecoration: 'none', color: '#000000' }}>
+            <img src={undoButton} width={20} alt="Checked" />
+            <Typography component="span">
+              Voltar
+            </Typography>
+          </Link>
           <div style={{ display: 'flex', flexDirection: "column", width: 620, gap: 30 }}>
             <Typography variant="h4" component="div">
               Faça o login da sua conta
@@ -31,18 +38,18 @@ function SignIn() {
               Login
             </Button>
             <div style={{ display: 'flex', flexDirection: "column", gap: 10 }}>
-              <Link color="black" href="#" underline="none">
+              <Link to="/in" style={{ textDecoration: 'none', color: '#000000' }}>
                 Esqueci a minha senha
               </Link>
-              <Link color="black" href="#" underline="none">
+              <Link to="/up" style={{ textDecoration: 'none', color: '#000000' }}>
                 Ainda não sou cliente
               </Link>
             </div>
           </div>
           <div />
-        </Grid>
-      </Grid>
-    </div>
+        </Grid >
+      </Grid >
+    </div >
   )
 }
 
