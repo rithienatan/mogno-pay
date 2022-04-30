@@ -49,8 +49,8 @@ function SignUp() {
             </Typography>
           </Link>
           <div style={{ display: 'flex', flexDirection: "column", width: 620, gap: 30 }}>
-            <Typography variant="h4" component="div">
-              Cadastre-se
+            <Typography variant="h4" component="div" style={{ color: '#709129', fontWeight: 500, fontSize: 32 }}>
+              Crie sua conta
             </Typography>
             <TextField id="outlined-basic" label="CPF" variant="outlined" />
             <TextField id="outlined-basic" label="Nome Completo" variant="outlined" />
