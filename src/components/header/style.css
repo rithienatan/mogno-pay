@@ -1,0 +1,11 @@
+.header{
+    border: 1px solid;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.header p{
+    /* border: solid; */
+    margin: 1em;
+}
