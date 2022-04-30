@@ -20,8 +20,10 @@ Branches workflow order.
 - React/Material-UI
 - Node.js
 - Git
+- PostgreSQL
 - Amazon Web Services
     - S3
+    - RDS
 
 ### Historic Version
 
