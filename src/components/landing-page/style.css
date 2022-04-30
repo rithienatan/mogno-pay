@@ -1,0 +1,72 @@
+.apresentation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 90vh;
+    background-image: url("../../assets/Rectangle\ 43.png");
+}
+
+#getCpf{
+    border: solid 1px;
+    height: 43vh;
+    width: 33vw;
+    border-radius: 6px ;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr  1fr;
+    padding: 2em;
+}
+
+#gifMogno{
+    height: 40vh;
+    width: 27vw;
+    padding: 1em;
+}
+
+#createAccount{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+}
+
+
+/*Pagina de quem somos numero2 no wireframe */
+
+.information{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    height: 95vh;
+}
+
+/*pagina numero 3 beficios */
+
+.benefits{
+    border-top: 1px solid;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    height: 95vh;
+}
+
+
+/*estilização para as duas */
+
+#text-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+}
+
+#image{
+    border: solid red;
+    margin: 1em;
+    left: 1em;
+    position: relative;
+
+}
+
+#image img{
+    height: 57vh;
+    
+}
