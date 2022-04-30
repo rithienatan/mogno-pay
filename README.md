@@ -20,9 +20,8 @@ Branches workflow order.
 - React/Material-UI
 - Node.js
 - Git
-- Google Cloud
-    - App Engine
-    - Firestore
+- Amazon Web Services
+    - S3
 
 ### Historic Version
 
