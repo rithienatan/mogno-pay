@@ -19,7 +19,9 @@ function ModalLogIn({ openModalSignIn, handleCloseModal }) {
           </Typography>
           <TextField id="outlined-basic" label="E-mail" variant="outlined" />
           <TextField id="outlined-basic" label="Senha" variant="outlined" />
-          <Button color="primary" variant="contained" href="#contained-buttons">
+          <Button
+            className='green-button-signIn'
+            variant="contained">
             Login
           </Button>
           <div style={{ display: 'flex', flexDirection: "column", gap: 10 }}>
@@ -33,7 +35,7 @@ function ModalLogIn({ openModalSignIn, handleCloseModal }) {
         </div>
         <div />
       </Box>
-    </Modal>
+    </Modal >
   );
 }
 
