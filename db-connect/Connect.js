@@ -1,9 +1,12 @@
+//---------- imports ---------
+require('dotenv').config({ path:'../.env' });
+
 //---------- Object ---------
 const connectPostgres = {
-    user: 'mognopaydb',
-    host: 'mognopay-db-postgresql.clrp0bw8p8nl.sa-east-1.rds.amazonaws.com',
-    database: 'postgres',
-    password: 'mognopaydb',
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_DATABASE,
+    password: process.env.DB_PASSWORD,
     port: 5432,
 };
 
