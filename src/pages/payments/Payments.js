@@ -1,11 +1,13 @@
-
+import Menu from "../../components/menu/Menu";
+import Receipt from "../../components/receipt/Receipt";
 
 const Payment = () => {
 
 
     return (
         <div className="payment">
-            jdijw
+            <Menu/>
+            <Receipt/>
    
         </div>
     )

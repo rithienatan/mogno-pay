@@ -1,0 +1,22 @@
+.menu {
+    height: 8vh;
+    display: grid;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: #325500;
+    grid-template-columns: 1fr 5fr 1fr;
+    /* position: fixed; */
+    width: 100%;
+    /* z-index: 1; */
+    border: solid;
+}
+
+#logo{
+    height: 8vh;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 5em;
+}
