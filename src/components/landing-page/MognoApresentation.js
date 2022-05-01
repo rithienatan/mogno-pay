@@ -3,24 +3,24 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
 const MognoApresentation = () => {
-    return(
+    return (
         <div className="apresentation">
             <div id="gifMogno" >
                 <>
-                <h1>imagine mogno (gif)</h1>
-                <p>lLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h1>imagine mogno (gif)</h1>
+                    <p>lLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </>
-                
+
             </div>
             <div id="getCpf">
-                    <h1>Peça o seu cartão da Mogno Pay</h1>
-                    <div id="createAccount">
-                        <TextField variant="outlined" label="CPF" size="mediun" fullWidth/>
-                        <Button variant="contained" fullWidth size="large">
-                            Criar Conta
-                        </Button>
-                    </div>
-                   
+                <h1>Peça o seu cartão da Mogno Pay</h1>
+                <div id="createAccount">
+                    <TextField variant="outlined" label="CPF" size="mediun" fullWidth />
+                    <Button color='primary' variant="contained" fullWidth size="large">
+                        Criar Conta
+                    </Button>
+                </div>
+
             </div>
         </div>
 

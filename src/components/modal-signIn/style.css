@@ -39,7 +39,7 @@
   text-align: center;
 }
 
-.green-button-signIn,
-.green-button-signIn:hover {
+#green-button-signIn,
+#green-button-signIn:hover {
   background-color: #709129;
 }

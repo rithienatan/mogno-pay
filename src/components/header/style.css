@@ -1,14 +1,15 @@
-.header{
+.header {
     height: 8vh;
     display: grid;
-    justify-content: space-between;    
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     grid-template-columns: 1fr 1fr;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
-#enter-buttom{
+#enter-buttom {
     margin-left: 42vw;
 }

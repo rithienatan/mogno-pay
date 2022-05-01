@@ -20,7 +20,7 @@ function ModalLogIn({ openModalSignIn, handleCloseModal }) {
           <TextField id="outlined-basic" label="E-mail" variant="outlined" />
           <TextField id="outlined-basic" label="Senha" variant="outlined" />
           <Button
-            className='green-button-signIn'
+            id='green-button-signIn'
             variant="contained">
             Login
           </Button>

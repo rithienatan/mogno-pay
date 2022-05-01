@@ -1,45 +1,47 @@
-.apresentation{
+.apresentation {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
     height: 100vh;
     background-image: url("../../assets/Rectangle\ 43.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#getCpf{
+#getCpf {
     background: white;
     height: 50vh;
     width: 32vw;
-    border-radius: 8px ;
-    display:grid;
+    border-radius: 8px;
+    display: grid;
     padding: 3em;
 }
 
-#getCpf h1{
+#getCpf h1 {
     color: #211D28;
     font-size: 40px;
 }
 
-#gifMogno{
+#gifMogno {
     height: 40vh;
     width: 27vw;
     padding: 1em;
 }
 
-#gifMogno h1{
+#gifMogno h1 {
     font-size: 50px;
     color: white;
     margin-bottom: 0.5em;
 }
 
-#gifMogno p{
+#gifMogno p {
     color: white;
     line-height: 1.7em;
 }
 
 
-#createAccount{
+#createAccount {
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -49,23 +51,29 @@
 
 /*Pagina número 2*/
 
-.information{
-    display: grid;
+.information {
+    /* display: grid;
     grid-template-columns: 0.8fr 1fr;
-    height: 95vh;
+    height: 95vh; */
+
+    display: flex;
+    justify-content: center;
 }
 
 /*Página número 3*/
 
-.benefits{
-    display: grid;
+.benefits {
+    /* display: grid;
     grid-template-columns: 0.8fr 1fr;
-    height: 95vh;
+    height: 95vh; */
+
+    display: flex;
+    justify-content: center;
 }
 
 /*estilização para as duas*/
 
-#text-information{
+#text-information {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,19 +81,20 @@
 }
 
 
-#text-information h1, p{
+#text-information h1,
+p {
     margin-bottom: 0.5em;
     letter-spacing: 1px;
     line-height: 1.3em;
 }
 
-#image{
+#image {
     margin: 1em;
     left: 2em;
     position: relative;
 }
 
-#image img{
+#image img {
     height: 90vh;
-    
+
 }
