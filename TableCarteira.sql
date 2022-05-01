@@ -6,4 +6,5 @@ CREATE TABLE Carteira(
 	cvv integer NOT NULL,
 	cardType varchar(10) NOT NULL,
 	carteiraHash varchar(64) NOT NULL PRIMARY KEY,
+	UNIQUE(id_cliente)
 );
