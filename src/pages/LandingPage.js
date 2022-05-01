@@ -6,13 +6,13 @@ import MognoApresentation from "../components/landing-page/MognoApresentation"
 
 
 const LandingPage = () => {
-    return(
+    return (
         <div>
-            <Header/>
-            <MognoApresentation/>
-            <InformationsMogno/>
-            <BenefitsMogno/>
-            <Footer/>
+            <Header />
+            <MognoApresentation />
+            <InformationsMogno />
+            <BenefitsMogno />
+            <Footer />
         </div>
     )
 }
