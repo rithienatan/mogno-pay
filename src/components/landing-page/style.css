@@ -4,21 +4,21 @@
     justify-items: center;
     align-items: center;
     height: 100vh;
-    background-image: url("../../assets/Background-image.png");
+    background-image: url("../../assets/Rectangle\ 43.png");
 }
 
 #getCpf{
     background: white;
-    height: 55vh;
-    width: 38vw;
+    height: 50vh;
+    width: 32vw;
     border-radius: 8px ;
     display:grid;
-    padding: 2em;
+    padding: 3em;
 }
 
 #getCpf h1{
     color: #211D28;
-    font-size: 32px;
+    font-size: 40px;
 }
 
 #gifMogno{
