@@ -15,8 +15,8 @@ const MognoApresentation = () => {
             <div id="getCpf">
                     <h1>Peça o seu cartão da Mogno Pay</h1>
                     <div id="createAccount">
-                        <TextField variant="outlined" label="CPF" size="small" fullWidth/>
-                        <Button variant="contained" fullWidth>
+                        <TextField variant="outlined" label="CPF" size="mediun" fullWidth/>
+                        <Button variant="contained" fullWidth size="large">
                             Criar Conta
                         </Button>
                     </div>
