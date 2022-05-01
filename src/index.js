@@ -13,6 +13,7 @@ import './index.css';
 import Cashback from './components/menu/cashback/cashback';
 import Store from './components/menu/store/store';
 import Receipt from './components/menu/receipt/Receipt';
+import MyData from './components/menu/myData/myData';
 
 const root = createRoot(document.getElementById("root"));
 
@@ -24,6 +25,7 @@ root.render(
       <Route path="receipt" element={<Receipt />} />
       <Route path="store" element={<Store />} />
       <Route path="cashback" element={<Cashback />} />
+      <Route path="data" element={<MyData />} />
     </Routes>
   </BrowserRouter>,
 );

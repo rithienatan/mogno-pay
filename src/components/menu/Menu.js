@@ -42,7 +42,9 @@ const Menu = () => {
             </div >
             {openModal &&
                 <div className="sidebar">
-                    <span className="myData">meus dados</span>
+                    <Link to={'/data'} style={{ textDecoration: 'none', width: '100%' }}>
+                        <span className="myData" onClick={handleOpenModal}>meus dados</span>
+                    </Link>
                     <hr />
                     <div className="notification">
                         <span className="myData">notificações</span>

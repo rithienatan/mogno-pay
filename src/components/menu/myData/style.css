@@ -1,0 +1,103 @@
+.myData-container {
+    padding: 100px 150px;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: row;
+
+    gap: 400px;
+}
+
+.left-data h1,
+.right-data h1 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.left-field {
+    width: 520px;
+
+    margin-top: 40px;
+}
+
+.left-field span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #9BBC53;
+}
+
+.edit-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 15px;
+    margin-bottom: -20px;
+}
+
+.edit-field p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #211D28;
+}
+
+.edit-field img {
+    width: 20px;
+    height: 20px;
+}
+
+#mognoCard {
+    width: 513px;
+    height: 275px;
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.information-row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* margin-top: 20px; */
+}
+
+.information-row span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #211D28;
+}
+
+.span-img {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.span-img img {
+    cursor: pointer;
+}
+
+.span-img span {
+    text-align: right;
+}
+
+#green-button-myData {
+    margin-top: 20px;
+
+    background-color: #fff;
+    color: #709129;
+    font-weight: 700;
+    border: 2px solid #709129;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
