@@ -1,7 +1,7 @@
 /**
  * Mogno Pay API web service
  * 
- * @version 0.2.0
+ * @version 0.2.2
  */
 //---------- imports ----------
 const express = require("express");
@@ -14,13 +14,14 @@ const GenerateHash = require("./aux-functions/GenerateHash");
 const app = express();
 const PORT = process.env.PORT || 5000;
 app.use(cors());
+app.use(express.json());
 
 //---------- routes ----------
 app.get("/", (req, res) => res.json("Api created for product MognoPay!"));
 
-app.get("/getHash", (req, res) => {
+app.post("/getHash", (req, res) => {
     return res.json({
-        "hash": req.params,
+        "hash": GenerateHash(req.body.name),
         "statusCode": 200
     });
 });
