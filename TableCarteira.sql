@@ -5,5 +5,5 @@ CREATE TABLE Carteira(
 	validade date NOT NULL,
 	cvv integer NOT NULL,
 	cardType varchar(10) NOT NULL,
-	carteiraHash varchar(64) NOT NULL PRIMARY KEY;
+	carteiraHash varchar(64) NOT NULL PRIMARY KEY,
 );
