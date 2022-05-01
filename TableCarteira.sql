@@ -1,5 +1,5 @@
 CREATE TABLE Carteira(
-	id_cliente integer NOT NULL,
+	id_cliente serial NOT NULL,
 	nome varchar(50) NOT NULL,
 	numero integer NOT NULL,
 	validade date NOT NULL,
