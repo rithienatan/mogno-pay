@@ -1,0 +1,11 @@
+.footerCashBack{
+    height: 50vh;
+    padding: 5em;
+    background-color: #C4C4C4;
+}
+
+.footerCashBack div{
+    width: 50vw;
+    line-height: 3em;
+
+}

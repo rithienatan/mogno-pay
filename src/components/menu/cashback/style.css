@@ -1,3 +1,80 @@
-.receipt{
-    border: solid;
+.page-cash{
+    display: grid;
+    height: 92vh;
+    grid-template-rows: 1fr 0.1fr;
 }
+
+.page-cash h3{
+    display: flex;
+
+}
+
+
+/* Div de contribuição */
+
+.contribution{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 4em;
+    
+}
+
+#text-relatorio{
+    margin-left: 6em;
+    margin-top: 2em;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    width: 30vw;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+    line-height: 3em;
+}
+
+#frame-one{
+    background-color: #C8E97D;
+}
+
+#frame-one h1{
+    font-size: 2.2em;
+}
+
+#frame-one p{
+    color: #214200;
+    font-size: 1.1em;
+
+}
+
+#frame-two{
+    background-color: #214200;
+}
+
+#frame-two h1{
+    font-size: 2.2em;
+    color: #FFD16A;
+}
+
+#frame-two p{
+    color: #DADADA;
+    font-size: 1.1em;
+}
+
+/* Div de detalhes */
+
+#details{
+    margin: 5em;
+
+
+}
+
+#text-table{
+    margin: 2em;
+}
+
