@@ -3,18 +3,22 @@
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    height: 90vh;
-    background-image: url("../../assets/Rectangle\ 43.png");
+    height: 100vh;
+    background-image: url("../../assets/Background-image.png");
 }
 
 #getCpf{
-    border: solid 1px;
-    height: 43vh;
-    width: 33vw;
-    border-radius: 6px ;
+    background: white;
+    height: 55vh;
+    width: 38vw;
+    border-radius: 8px ;
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr  1fr;
     padding: 2em;
+}
+
+#getCpf h1{
+    color: #211D28;
+    font-size: 32px;
 }
 
 #gifMogno{
@@ -23,15 +27,27 @@
     padding: 1em;
 }
 
+#gifMogno h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+#gifMogno p{
+    color: white;
+    line-height: 1.7em;
+}
+
+
 #createAccount{
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 2em;
     align-items: center;
 }
 
 
-/*Pagina de quem somos numero2 no wireframe */
+/*Pagina número 2*/
 
 .information{
     display: grid;
@@ -39,34 +55,37 @@
     height: 95vh;
 }
 
-/*pagina numero 3 beficios */
+/*Página número 3*/
 
 .benefits{
-    border-top: 1px solid;
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     height: 95vh;
 }
 
-
-/*estilização para as duas */
+/*estilização para as duas*/
 
 #text-information{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2em;
+    padding: 4em;
+}
+
+
+#text-information h1, p{
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+    line-height: 1.3em;
 }
 
 #image{
-    border: solid red;
     margin: 1em;
-    left: 1em;
+    left: 2em;
     position: relative;
-
 }
 
 #image img{
-    height: 57vh;
+    height: 90vh;
     
 }

@@ -1,11 +1,14 @@
 .header{
-    border: 1px solid;
     height: 8vh;
-    display: flex;
+    display: grid;
     justify-content: space-between;    
+    align-items: center;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    width: 100%;
 }
 
-.header p{
-    /* border: solid; */
-    margin: 1em;
+#enter-buttom{
+    margin-left: 37vw;
 }
