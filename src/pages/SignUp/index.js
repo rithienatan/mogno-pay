@@ -40,14 +40,16 @@ function SignUp() {
           </Link>
           <div />
           <div className='signUp-container'>
-            <Typography className='signUp-title'>
+            <span className='signUp-title'>
               Crie sua conta
-            </Typography>
+            </span>
             <TextField id="cpf" label="CPF" variant="outlined" />
             <TextField id="fullName" label="Nome Completo" variant="outlined" />
             <TextField id="birthDate" label="Data de Nascimento" variant="outlined" />
             <TextField id="email" label="E-mail" variant="outlined" />
             <TextField id="emailConfirm" label="Confirmação de e-mail" variant="outlined" />
+            <TextField id="senha" label="Senha" variant="outlined" />
+            <TextField id="senhaConfirm" label="Confirmação de Senha" variant="outlined" />
             <ListItem alignItems="center">
               <Checkbox
                 inputProps={{ "aria-label": "primary checkbox" }}
