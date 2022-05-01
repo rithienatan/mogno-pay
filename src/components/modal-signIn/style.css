@@ -1,0 +1,40 @@
+.modalStyle-signIn {
+  width: 700px;
+  height: 600px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 24px;
+}
+
+.closeModal-signIn {
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+
+.modal-content-signIn {
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  gap: 30px;
+}
+
+.modal-title-signIn {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}

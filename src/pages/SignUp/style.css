@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.sideImage {
+  width: 100%;
+  height: 100vh;
+}
+
+.undoButton {
+  width: 100px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  color: #000000;
+
+  cursor: pointer;
+
+  position: absolute;
+  left: 730px;
+  top: 40px;
+}
+
+.signUp-container {
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  gap: 30px;
+}
+
+.signUp-title {
+  color: #709129;
+  font-weight: 500px;
+  font-size: 32px;
+}
+
+.checkbox-span {
+  color: #709129;
+  text-decoration: underline;
+}
+
+.green-button,
+.green-button:hover {
+  background-color: #709129;
+}
+
+.modalStyle {
+  width: 1000px;
+  height: 480px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 24px;
+}
+
+.modal-content {
+  height: 90%;
+  width: 480px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeModal {
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+
+#modal-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+
+#modal-description {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
