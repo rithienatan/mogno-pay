@@ -12,7 +12,18 @@ const Header = () => {
 
     return (
         <div className="header">
-            <img src={logo} id="logo"/>
+            <h1>MoGno.</h1>
+            <ul>
+                <li>
+                    <a href="#initial">Início</a>
+                </li>
+                <li>
+                    <a href="#about">Quem somos</a>
+                </li>
+                <li>
+                    <a href="#beneficts">Benefícios</a>
+                </li>
+            </ul>
             <img id="enter-buttom" onClick={handleOpenModalSignIn} src={enterButtom} />
             <SignIn
                 openModalSignIn={openModalSignIn}
