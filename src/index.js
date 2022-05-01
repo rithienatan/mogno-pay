@@ -5,9 +5,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
-import LandingPage from "./pages/LandingPage";
+import LandingPage from "./pages/LandingPage/LandingPage";
 import { createRoot } from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
@@ -18,7 +17,6 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      <Route path="in" element={<SignIn />} />
       <Route path="up" element={<SignUp />} />
     </Routes>
   </BrowserRouter>,

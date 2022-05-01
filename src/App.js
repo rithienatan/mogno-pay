@@ -1,15 +1,10 @@
 import './App.css';
-import LandingPage from './pages/LandingPage';
-import { ThemeProvider } from "@material-ui/core";
-import Theme from "../src/constants/stylesMui";
-
+import LandingPage from './pages/LandingPage/LandingPage';
 
 function App() {
   return (
     <div>
-      <ThemeProvider theme={Theme}>
         <LandingPage />
-      </ThemeProvider>
     </div>
   );
 }
