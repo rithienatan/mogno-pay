@@ -1,5 +1,5 @@
 import "../landing-page/style.css" 
-import flowerImage from "../../assets/Flor-png.png"
+import imageTree from "../../assets/Rectangle 43.png"
 
 
 const BenefitsMogno = () => {
@@ -10,7 +10,7 @@ const BenefitsMogno = () => {
                 <p>lLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue justo, venenatis sit amet rhoncus id, finibus efficitur arcu. Ut ut turpis orci. Aliquam aliquam turpis vel ante consectetur, sed hendrerit sem aliquam. Quisque sollicitudin porttitor magna. </p>
             </div>
             <div id="image">
-                <img src={flowerImage}/>
+                <img src={imageTree}/>
             </div>
         </div>
 
