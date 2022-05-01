@@ -1,7 +1,8 @@
+import "../header/style.css";
 
 const Menu = () => {
     return(
-        <div>
+        <div className="header">
             menuu
         </div>
     )
