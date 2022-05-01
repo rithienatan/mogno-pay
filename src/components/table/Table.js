@@ -12,9 +12,9 @@ function createData(date, product, cash, value) {
 
 const rows = [
   createData('Frozen yoghurt', "159", "6.0", "24"),
-  createData('Ice cream sandwich'," 237", "9.0"," 37"),
+  createData('Ice cream sandwich', " 237", "9.0", " 37"),
   createData('Eclair', "262", "16.0", "24"),
-  createData('Eclair'," 262", "16.0", "24"),
+  createData('Eclair', " 262", "16.0", "24"),
   createData('Eclair', "262", "16.0", "24"),
 
 ];

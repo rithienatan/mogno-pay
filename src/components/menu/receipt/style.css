@@ -1,0 +1,143 @@
+.receipt-container {
+    padding: 100px 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.receipt-months {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.month {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.month span {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: #DADADA;
+}
+
+.moonth-green {
+    border: 3px solid #C8E97D;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.moonth-green span {
+    color: #214200;
+    font-weight: 800;
+}
+
+.receipt-content {
+    margin-top: 30px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    /* gap: 100px; */
+}
+
+.receipt-left {
+    display: flex;
+    flex-direction: column;
+    width: 513px;
+    gap: 30px;
+}
+
+.receipt-content-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#frame {
+    background-color: #C8E97D;
+    width: 513px;
+    height: 190px;
+}
+
+#frame h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #214200;
+
+    margin-bottom: 10px;
+}
+
+#frame span {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+
+    margin-bottom: 5px;
+}
+
+#frame p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.spending-month {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spending-month span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #709129;
+}
+
+.left-hr {
+    margin-top: -20px;
+}
+
+.right-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.right-title span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #709129;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+.total-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #709129;
+}
+
+.total-value {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #214200;
+}
