@@ -4,9 +4,13 @@
     justify-items: center;
     align-items: center;
     height: 100vh;
-    background-image: url("../../assets/Rectangle\ 43.png");
+    background-image: url("../../assets/Frame\ 2Background-image.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#text-green{
+    color:  #325500;
 }
 
 #getCpf {

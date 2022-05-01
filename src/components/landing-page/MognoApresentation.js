@@ -6,11 +6,11 @@ import {Link} from "react-router-dom"
 
 const MognoApresentation = () => {
     return (
-        <div className="apresentation">
+        <div className="apresentation" id="initial">
             <div id="gifMogno" >
                 <>
-                    <h1>imagine mogno (gif)</h1>
-                    <p>lLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h1>MoGno</h1>
+                    <p>Juntos somos mais fortes</p>
                 </>
 
             </div>
