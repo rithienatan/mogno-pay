@@ -1,22 +1,44 @@
 .menu {
     height: 8vh;
     display: grid;
-    /* justify-content: space-between; */
     align-items: center;
     background-color: #325500;
-    grid-template-columns: 1fr 5fr 1fr;
-    /* position: fixed; */
+    grid-template-columns: 10fr 1fr;
+    position: fixed;
     width: 100%;
-    /* z-index: 1; */
-    border: solid;
+    z-index: 1;
 }
 
 #logo{
     height: 8vh;
 }
 
-.menu ul{
+#list-menu{
     list-style: none;
     display: flex;
     gap: 5em;
+}
+
+#list-menu ul{
+    list-style: none;
+    display: flex;
+    gap: 7em;
+    align-items: center;
+}
+
+#link{
+    text-decoration: none;
+    color: #709129;
+    font-size: 20px;
+}
+
+#link:hover{
+    color:#FFD16A ;
+}
+
+#menu-icon{
+    display: flex;
+    gap: 0.5em;
+    cursor: pointer;
+    color: #709129;
 }
