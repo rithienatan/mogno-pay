@@ -10,6 +10,7 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import { createRoot } from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import Payment from './pages/payments/Payments';
 
 const root = createRoot(document.getElementById("root"));
 
@@ -18,6 +19,7 @@ root.render(
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="up" element={<SignUp />} />
+      <Route path="pay" element={<Payment/>}/>
     </Routes>
   </BrowserRouter>,
 );
