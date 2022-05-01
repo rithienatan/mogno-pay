@@ -1,11 +1,10 @@
-
+import Menu from '../Menu';
 
 const Receipt = () => {
-    return(
+    return (
         <div className="receipt">
-
-            hidwdiwj
-            
+            <Menu />
+            Receipt
         </div>
 
     )
