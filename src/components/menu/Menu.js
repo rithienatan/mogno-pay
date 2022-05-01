@@ -16,7 +16,7 @@ const Menu = () => {
             <div className="menu">
                 <div id="list-menu">
                     {/* <img src={logo} id="logo" /> */}
-                    <span id="logo">MoGno</span>
+                    <span id="logo">MoGno.</span>
                     <ul>
                         <li>
                             <Link to={'/receipt'} id="link">

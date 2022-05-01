@@ -1,11 +1,11 @@
-import "../footer/style.css"
+// import "../footer/style.css"
 
-const Footer = () => {
-    return(
-        <div className="footer">
-            footer
-        </div>
-    )
-}
+// const Footer = () => {
+//     return(
+//         <div className="footer">
+//             footer
+//         </div>
+//     )
+// }
 
-export default Footer;
+// export default Footer;

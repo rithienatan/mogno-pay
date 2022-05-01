@@ -1,4 +1,4 @@
-import Footer from "../../components/footer/Footer";
+// import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import BenefitsMogno from "../../components/landing-page/BenefitsMogno";
 import InformationsMogno from "../../components/landing-page/InformationsMogno";
@@ -13,7 +13,7 @@ const LandingPage = () => {
             <MognoApresentation />
             <InformationsMogno />
             <BenefitsMogno />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
