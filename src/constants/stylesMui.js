@@ -1,13 +1,12 @@
-// import { createTheme } from "@mui/system";
-import { createTheme } from '@material-ui/styles';
-import colorMui from './colorMui';
+import { createTheme } from '@material-ui/core/styles';
+import {primaryColor} from './colorMui';
 
-const stylesMui = createTheme({
+const Theme = createTheme({
   palette: {
     primary: {
-      main: colorMui,
+      main: primaryColor,
     }
   }
 });
 
-export default stylesMui;
+export default Theme;
