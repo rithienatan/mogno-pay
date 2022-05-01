@@ -1,41 +1,68 @@
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router";
-import "./style.css";
-import logo from "../../assets/logo.png"
-import menuImage from "../../assets/enter-button.png"
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import { Button, Switch } from '@mui/material';
+import { useState } from 'react';
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
+import notButton from '../../assets/notification-button.svg';
+import "./style.css";
 
 const Menu = () => {
+    const [openModal, setOpenModal] = useState(false);
+    const handleOpenModal = () => setOpenModal(!openModal);
+    // const handleCloseModal = () => setOpenModal(false);
 
     return (
-        <div className="menu">
-            <div id="list-menu">
-            <img src={logo} id="logo" />
-            <ul>
-                <li>
-                    <Link to={'/receipt'} id="link">
-                        Fatura
-                    </Link>
-                </li>
-                <li>
-                    <Link to={'/cashback'} id="link">
-                        Cashback
-                    </Link>
-                </li>
-                <li>
-                    <Link to={'/store'} id="link">
-                        Lojas Parceiras
-                    </Link>
-                </li>
-            </ul>
-            </div>
-            <div id="menu-icon">
-                <MenuRoundedIcon/>
-                <h3>menu</h3>
-            </div>
-           
-            
-        </div >
+        <>
+            <div className="menu">
+                <div id="list-menu">
+                    {/* <img src={logo} id="logo" /> */}
+                    <span id="logo">MoGno</span>
+                    <ul>
+                        <li>
+                            <Link to={'/receipt'} id="link">
+                                Fatura
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to={'/cashback'} id="link">
+                                Cashback
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to={'/store'} id="link">
+                                Lojas Parceiras
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div id="menu-icon" onClick={handleOpenModal}>
+                    <MenuRoundedIcon />
+                    <h3>menu</h3>
+                </div>
+            </div >
+            {openModal &&
+                <div className="sidebar">
+                    <span className="myData">meus dados</span>
+                    <hr />
+                    <div className="notification">
+                        <span className="myData">notificações</span>
+                        <Switch />
+                    </div>
+                    <hr />
+                    <div className="lastBuy">
+                        <span className="lastBuy-1">última compra</span>
+                        <span className="lastBuy-2">22 ABR</span>
+                        <span className="lastBuy-3">R$ 26,55</span>
+                    </div>
+                    <hr />
+                    <span className="exit">sair</span>
+                    <hr />
+                    <Button id='green-button-sidebar' fullWidth variant="contained">
+                        Bloquear Cartão
+                    </Button>
+                </div>
+            }
+        </>
     )
 }
 

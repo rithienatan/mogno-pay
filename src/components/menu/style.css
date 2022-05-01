@@ -7,38 +7,113 @@
     position: fixed;
     width: 100%;
     z-index: 1;
+    padding-left: 40px;
 }
 
-#logo{
-    height: 8vh;
+#logo {
+    height: 4.5vh;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #eeeeee
 }
 
-#list-menu{
+#list-menu {
     list-style: none;
     display: flex;
     gap: 5em;
 }
 
-#list-menu ul{
+#list-menu ul {
     list-style: none;
     display: flex;
     gap: 7em;
     align-items: center;
 }
 
-#link{
+#link {
     text-decoration: none;
     color: #709129;
     font-size: 20px;
 }
 
-#link:hover{
-    color:#FFD16A ;
+#link:hover {
+    color: #FFD16A;
 }
 
-#menu-icon{
+#menu-icon {
     display: flex;
     gap: 0.5em;
     cursor: pointer;
     color: #709129;
+}
+
+.sidebar {
+    background-color: #fff;
+    color: black;
+    width: 597px;
+    height: 100vh;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    padding: 140px 42px;
+
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.45);
+}
+
+.myData,
+.exit {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: #211D28;
+
+    cursor: pointer;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+}
+
+.notification {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lastBuy {
+    display: flex;
+    flex-direction: column;
+    color: #757575;
+}
+
+.lastBuy-1 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.lastBuy-2,
+.lastBuy-3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#green-button-sidebar {
+    background-color: #fff;
+    color: #709129;
+    font-weight: 700;
+    border: 2px solid #709129;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
