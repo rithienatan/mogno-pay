@@ -1,7 +1,7 @@
 /**
  * Mogno Pay API web service
  * 
- * @version 0.2.2
+ * @version 0.3.2
  */
 //---------- imports ----------
 const express = require("express");
@@ -24,6 +24,14 @@ app.post("/getHash", (req, res) => {
         "hash": GenerateHash(req.body.name),
         "statusCode": 200
     });
+});
+
+app.post("/createUser", (req, body) => {
+
+});
+
+app.post("/searchUser", (req, body) => {
+
 });
 
 //----------Start server ----------
