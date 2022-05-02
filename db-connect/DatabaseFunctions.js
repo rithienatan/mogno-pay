@@ -4,9 +4,7 @@ const { Client } = require('pg');
 //---------- custom imports ----------
 const connectPostgres = require('./Connect');
 const RNG = require('../aux-functions/GenerateRandomNumber');
-
-//---------- configs ---------
-const client = new Client(connectPostgres);
+const Hash = require('../aux-functions/GenerateHash');
 
 //---------- functions ----------
 /**
@@ -16,13 +14,15 @@ const client = new Client(connectPostgres);
  */
 function InsertUser(user)
 {
+    const client = new Client(connectPostgres);
+
     client.connect();
 
     const querie = `INSERT INTO CARTEIRA(nome, numero, validade, cvv, cardtype, carteirahash)
-	    VALUES ('Sami', ${RNG(1000000000000000, 9999999999999999)}, '2028-04-01', ${RNG(100, 999)}, 'Crédito', 'asfgrsghrsgarf94sg6r81ga6');
+	    VALUES ('${user.nome}', ${RNG(10000000, 99999999)}, '2028-04-01', ${RNG(100, 999)}, 'Crédito', '${Hash(user.nome)}');
 
     INSERT INTO CLIENTE(nome, cpf, senha, email) 
-	    VALUES ('Sami', '787.877.877-88', 'ni', 'nin@email.com');`;
+	    VALUES ('${user.nome}', '${user.cpf}', '${user.senha}', '${user.email}');`;
 
     client.query(querie, (err, res) => {
         console.log(err, res)
@@ -37,6 +37,8 @@ function InsertUser(user)
  */
 async function SearchUser(user)
 {
+    const client = new Client(connectPostgres);
+
     let object = {
         "cliente": null,
         "carteira": null
@@ -51,23 +53,24 @@ async function SearchUser(user)
         .then(res => { const temp = res.rows[0]; object.cliente = temp; })
         .catch(e => { console.log(e); client.end(); return(null); });
 
-    // executa a segunda query
-    const querie_II = `SELECT * FROM CARTEIRA WHERE id_cliente = 1;`;
 
-    await client
-        .query(querie_II)
-        .then(res => { const temp = res.rows[0]; object.carteira = temp; })
-        .catch(e => { console.log(e); client.end(); return(null); });
+    if(user.senha !== object.cliente.senha)
+    { client.end(); return null; }
+    else
+    {
+        // executa a segunda query
+        const querie_II = `SELECT * FROM CARTEIRA WHERE id_cliente = ${object.cliente.id_cliente};`;
 
-    client.end();    
+        await client
+            .query(querie_II)
+            .then(res => { const temp = res.rows[0]; object.carteira = temp; })
+            .catch(e => { console.log(e); client.end(); return(null); });
+
+        client.end();    
+    }//end if
 
     return(object);
 }//end FindUserByEmail()
-
-async function print()
-{ console.log(await SearchUser("as")); }
-
-console.log(print());
 
 //---------- exports ---------
 module.exports = {

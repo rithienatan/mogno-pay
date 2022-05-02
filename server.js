@@ -28,7 +28,7 @@ app.post("/getHash", (req, res) => {
     });
 });
 
-app.post("/createUser", (req, body) => {
+app.post("/createUser", (req, res) => {
     InsertUser(req.body);
 
     return res.json({
@@ -37,14 +37,23 @@ app.post("/createUser", (req, body) => {
     });
 });
 
-app.post("/searchUser", async (req, body) => {
+app.post("/searchUser", async (req, res) => {
     const object = await SearchUser(req.body);
 
-    return res.json({
-        "object": object,
-        "message": "User not found in database!",
-        "statusCode": 404
-    });
+    if(object === null)
+    {
+        return res.json({
+            "message": "User not found in database!",
+            "statusCode": 404
+        });
+    }
+    else
+    {
+        return res.json({
+            "object": object,
+            "statusCode": 200
+        });
+    }//end if
 });
 
 //----------Start server ----------
