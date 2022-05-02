@@ -38,3 +38,8 @@
   line-height: 40px;
   text-align: center;
 }
+
+#green-button-signIn,
+#green-button-signIn:hover {
+  background-color: #709129;
+}

@@ -19,9 +19,11 @@ function ModalLogIn({ openModalSignIn, handleCloseModal }) {
           </Typography>
           <TextField id="outlined-basic" label="E-mail" variant="outlined" />
           <TextField id="outlined-basic" label="Senha" variant="outlined" />
-          <Button color="primary" variant="contained" href="#contained-buttons">
-            Login
-          </Button>
+          <Link to="/receipt" style={{ textDecoration: 'none', width: '100%' }} id="style-button">
+            <Button variant="contained" fullWidth size="large" id='green-button-signIn'>
+              Login
+            </Button>
+          </Link>
           <div style={{ display: 'flex', flexDirection: "column", gap: 10 }}>
             <Link to="/in" style={{ textDecoration: 'none', color: '#000000' }}>
               Esqueci a minha senha
@@ -33,7 +35,7 @@ function ModalLogIn({ openModalSignIn, handleCloseModal }) {
         </div>
         <div />
       </Box>
-    </Modal>
+    </Modal >
   );
 }
 

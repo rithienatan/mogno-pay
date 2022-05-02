@@ -40,14 +40,16 @@ function SignUp() {
           </Link>
           <div />
           <div className='signUp-container'>
-            <Typography className='signUp-title'>
+            <span className='signUp-title'>
               Crie sua conta
-            </Typography>
+            </span>
             <TextField id="cpf" label="CPF" variant="outlined" />
             <TextField id="fullName" label="Nome Completo" variant="outlined" />
             <TextField id="birthDate" label="Data de Nascimento" variant="outlined" />
             <TextField id="email" label="E-mail" variant="outlined" />
             <TextField id="emailConfirm" label="Confirmação de e-mail" variant="outlined" />
+            <TextField id="senha" label="Senha" variant="outlined" />
+            <TextField id="senhaConfirm" label="Confirmação de Senha" variant="outlined" />
             <ListItem alignItems="center">
               <Checkbox
                 inputProps={{ "aria-label": "primary checkbox" }}
@@ -56,7 +58,7 @@ function SignUp() {
                 Eu li, estou ciente das condições de tratamento dos meus dados pessoais e dou meu consentimento, quando aplicável, conforme descrito nesta <span className='checkbox-span'>Política de Privacidade</span>.
               </Typography>
             </ListItem>
-            <Button className='green-button' onClick={handleOpenModal} variant="contained">
+            <Button id='green-button' onClick={handleOpenModal} variant="contained">
               Enviar Dados
             </Button>
           </div>
@@ -80,7 +82,7 @@ function SignUp() {
               Seu pedido será analisado e, se tudo estiver certo, uma resposta vai ser enviada para o seu e-mail.
             </Typography>
             <Link to="/" style={{ textDecoration: 'none' }}>
-              <Button className="green-button" sx={{ mt: 5 }} onClick={handleCloseModal} variant="contained">
+              <Button id="green-button" sx={{ mt: 5 }} onClick={handleCloseModal} variant="contained">
                 Voltar Para Home
               </Button>
             </Link>

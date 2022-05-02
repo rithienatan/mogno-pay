@@ -44,8 +44,8 @@
   text-decoration: underline;
 }
 
-.green-button,
-.green-button:hover {
+#green-button,
+#green-button:hover {
   background-color: #709129;
 }
 
