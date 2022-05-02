@@ -1,5 +1,7 @@
 import SignIn from '../../components/modal-signIn';
 import { useState } from 'react';
+import { Carousel } from '../../components/landing-page/Carousel.js';
+
 
 function LandingPage() {
   const [openModalSignIn, setOpenModalSignIn] = useState(true);

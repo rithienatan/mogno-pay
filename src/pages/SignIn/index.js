@@ -6,12 +6,7 @@ function SignIn() {
   return (
     <div>
       <Grid container style={{ minHeight: '100vh' }}>
-        <Grid item xs={12} sm={6}>
-          <img
-            src="https://images.pexels.com/photos/4870468/pexels-photo-4870468.jpeg?cs=srgb&dl=pexels-clement-percheron-4870468.jpg&fm=jpg"
-            style={{ width: "100%", height: "100vh", objectFit: "cover" }}
-            alt="Login Image" />
-        </Grid>
+        
         <Grid
           container
           item
